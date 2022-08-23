@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+    <!-- Title -->
+    <title>Material Design for Bootstrap</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+
+    <!-- Animate-css -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+  </head>
+  <body>
+    <!-- header Start -->
+    <header class="header">
+      <div class="container">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light mt-1">
+          <!-- Navbar brand -->
+          <a class="navbar-brand" href="#">
+            <img src="img/header_logo.svg" alt="logo">
+          </a>
+          
+          <div>
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fas fa-bars"></i>
+              <i class="fa fa-close"></i>
+            </button>
+            
+          </div>
+          <!-- Collapsible wrapper -->
+          <div class="collapse navbar-collapse pb-sm-5 pb-lg-0 hide" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-lg-auto mt-2 mb-2 mb-lg-0 pe-lg-5">
+              <!-- Services -->
+              <li class="nav-item dropdown">
+                <a class="nav-link text-sm-center text-lg-start py-sm-4 py-lg-0 dropdown-toggle px-4 text_black text_white text_sm_center mt_6"
+                  href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+                <!-- Dropdown menu -->
+                <ul class="dropdown-menu service_items" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">Action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- About Us -->
+              <li class="nav-item dropdown">
+                <a class="nav-link text-sm-center text-lg-start py-sm-4 py-lg-0 dropdown-toggle px-4 text_black text_white text_sm_center mt_6"
+                  href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                  About Us
+                </a>
+                <!-- Dropdown menu -->
+                <ul class="dropdown-menu about_items" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">Action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- News -->
+              <li class="nav-item dropdown">
+                <a class="nav-link text-sm-center text-lg-start py-sm-4 py-lg-0 dropdown-toggle px-4 text_black text_white text_sm_center mt_6"
+                  href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                  News
+                </a>
+                <!-- Dropdown menu -->
+                <ul class="dropdown-menu news_items" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">Action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- Event list -->
+              <li class="nav-item dropdown">
+                <a class="nav-link text-sm-center text-lg-start py-sm-4 py-lg-0 dropdown-toggle px-4 text_black text_white text_sm_center mt_6"
+                  href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                  Event list
+                </a>
+                <!-- Dropdown menu -->
+                <ul class="dropdown-menu event_items" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">Action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <!-- header btn -->
+            <div class="d-flex justify-content-sm-center justify-content-lg-start sm_center mt_6 pb_sm_4">
+              <button class="btn header_btn mt-1">
+                Get in Touch
+              </button>
+            </div>
+          </div>
+          <!-- Container wrapper -->
+        </nav>
+        <!-- Navbar -->
+      </div>
+    </header>
+    <!-- header Ends -->
+    <!-- Collapsible wrapper -->
+    <div class="pb-sm-5 pb-lg-0 toggle_nav" id="toggle">
+      <ul class="list-unstyled ms-lg-auto mt-2 mb-2 mb-lg-0 pe-lg-5 toggle_list">
+        <!-- Services -->
+        <li class="nav-item dropdown">
+          <a class="nav-link text-sm-center text-lg-start py-sm-4 py-lg-0 dropdown-toggle px-4 text_black text_white text_sm_center mt_6"
+            href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <!-- Dropdown menu -->
+          <ul class="dropdown-menu service_items" aria-labelledby="navbarDropdown">
+            <li>
+              <a class="dropdown-item" href="#">Action</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Another action</a>
+            </li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </li>
+          </ul>
+        </li>
+        <!-- About Us -->
+        <li class="nav-item dropdown">
+          <a class="nav-link text-sm-center text-lg-start py-sm-4 py-lg-0 dropdown-toggle px-4 text_black text_white text_sm_center mt_6"
+            href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+            About Us
+          </a>
+          <!-- Dropdown menu -->
+          <ul class="dropdown-menu about_items" aria-labelledby="navbarDropdown">
+            <li>
+              <a class="dropdown-item" href="#">Action</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Another action</a>
+            </li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </li>
+          </ul>
+        </li>
+        <!-- News -->
+        <li class="nav-item dropdown">
+          <a class="nav-link text-sm-center text-lg-start py-sm-4 py-lg-0 dropdown-toggle px-4 text_black text_white text_sm_center mt_6"
+            href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+            News
+          </a>
+          <!-- Dropdown menu -->
+          <ul class="dropdown-menu news_items" aria-labelledby="navbarDropdown">
+            <li>
+              <a class="dropdown-item" href="#">Action</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Another action</a>
+            </li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </li>
+          </ul>
+        </li>
+        <!-- Event list -->
+        <li class="nav-item dropdown">
+          <a class="nav-link text-sm-center text-lg-start py-sm-4 py-lg-0 dropdown-toggle px-4 text_black text_white text_sm_center mt_6"
+            href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+            Event list
+          </a>
+          <!-- Dropdown menu -->
+          <ul class="dropdown-menu event_items" aria-labelledby="navbarDropdown">
+            <li>
+              <a class="dropdown-item" href="#">Action</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Another action</a>
+            </li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <!-- header btn -->
+      <div class="d-flex justify-content-sm-center justify-content-lg-start sm_center mt_6 pb_sm_4">
+        <button class="btn header_btn mt-1">
+          Get in Touch
+        </button>
+      </div>
+    </div>
+    <!-- main Start -->
+    <section class="main">
+      <div class="main_content">
+        <div class="container">
+          <div class="row gx-lg-4">
+            <div class="col-12 col-lg-6">
+              <!-- main_text -->
+              <div class="main_text pt-sm-3 pt-lg-0">
+                <h1 class="text-sm-center text-lg-start text_primary pt-lg-5 fw_bold lh_100" data-aos="fade-right">Star-blue Company <span class="fw_700 border_btm">Offshore</span>
+                </h1>
+                <p class="text-sm-center text-lg-start pt-4 text_xl text_off pt_7">Comprehensive development service.</p>
+                <div class="d-flex justify-content-sm-center justify-content-lg-start main_button mt-5 sm_center">
+                  <button class="btn main_btn">Download Quotes
+                    <span class="px-2 small"><img class="img-fluid" src="img/btn_icon.svg" alt="icon"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <!-- main_img -->
+              <div class="my-sm-4 my-lg-0 pt-sm-3 pt-lg-5 pt_5" data-aos="fade-left">
+                <img class="img-fluid ms-2" src="img/main_img.svg" alt="main_image">
+              </div>
+            </div>
+          </div>
+          <!-- slider -->
+          <div class="slider mb-5">
+            <p class="pt-lg-5 text_xm text_fade fw_700 text_sm_center text-sm-center text-lg-start pt_4">200+ Happy Customer</p>
+            <div class="row py-sm-4">
+              <div class="col-12">
+                <!-- slider_item -->
+                <div class="d-flex owl-carousel owl-theme slider-carousel">
+                  <div class="item d-flex justify-content-sm-center justify-content-lg-start sm_center">
+                    <img src="img/abit.svg" class="img-fluid" alt="icon">
+                  </div>
+                  <div class="item d-flex justify-content-sm-center justify-content-lg-start sm_center">
+                    <img src="img/croit.svg" class="img-fluid" alt="icon">
+                  </div>
+                  <div class="item d-flex justify-content-sm-center justify-content-lg-start sm_center">
+                    <img src="img/rgog.svg" class="img-fluid" alt="icon">
+                  </div>
+                  <div class="item d-flex justify-content-sm-center justify-content-lg-start sm_center">
+                    <img src="img/infordio.svg" class="img-fluid" alt="icon">
+                  </div>
+                  <div class="item d-flex justify-content-sm-center justify-content-lg-start sm_center">
+                    <img src="img/intage.svg" class="img-fluid" alt="icon">
+                  </div>
+                  <div class="item d-flex justify-content-sm-center justify-content-lg-start sm_center">
+                    <img src="img/fujitsu.svg" class="img-fluid" alt="icon">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- main Ends -->
+    <!-- cards Start -->
+    <section class="cards mb-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <div class="card" data-aos="zoom-in-up">
+              <div class="row">
+                <div class="col-9">
+                  <div class="card_text pt-4 ps-4 mb-4">
+                    <h2 class="text_large text_black fw_700">What is offshore development?</h2>
+                    <p class="pt-3">Offshore development is a method of ordering from an overseas company to develop a system or software. Using this
+                      form,
+                      customers can not only save on recruitment and development costs, but also quickly find a source of high-quality
+                      engineers.</p>
+                  </div>
+                </div>
+                <div class="col-3 d-flex align-items-end">
+                  <div class="card_img pe-4 pb-4">
+                    <img src="img/card1.svg" class="img-fluid" alt="icon">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 mt-sm-3 mt-lg-0">
+            <div class="card card2 bg_primary mt_6" data-aos="zoom-in-down">
+              <div class="row">
+                <div class="col-9">
+                  <div class="card_text pt-4 ps-4 mb-4">
+                    <h2 class="ps-3 text_large text_white fw_700">Star-blue will help you solve your problem!</h2>
+                    <ul class="pt-3">
+                      <li class="text_white">Reduce development costs. -Adopted during system development ️</li>
+                      <li class="text_white">Lack of engineers</li>
+                      <li class="text_white">️No software development experience ️</li>
+                      <li class="text_white">I just want to hire an engineer in a short time</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-3 d-flex align-items-end">
+                  <div class="card_img pe-4 pb-4">
+                    <img src="img/card2.svg" class="img-fluid" alt="icon">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- cards Ends -->
+    <!-- services Start -->
+    <section class="services pt-sm-4 pt-lg-5 pt_4">
+      <div class="container">
+        <div class="row gx-lg-5 flex-sm-column-reverse flex-xl-row flex_column-reverse flex_sm-reverse">
+          <div class="col-12 col-xl-4 w_100">
+            <!-- service-img -->
+            <div class="d-flex justify-content-sm-center justify-content-xl-start pt-sm-5 pt-xl-0 center pt_5 pt_4 mt_10">
+              <img src="img/services.svg" class="img-fluid" alt="picture">
+            </div>
+          </div>
+          <!-- service-content -->
+          <div class="col-12 col-xl-8 w_100">
+            <div class="service_heading ms-xl-3">
+              <h3 class="text-sm-center text-xl-start text_secondary text_black fw_regular text_center text_sm_center"><span class="text_warning fw_bold">Star-blue</span> <span
+                  class="fw_bold">provides a development</span> form <br/> suitable for KH requirements</h3>
+            </div>
+            <!-- service_grid -->
+            <div class="row pt-5 ps-lg-4 pt_0">
+              <div class="col-12 flex_column">
+                <div class="row">
+                  <div class="col-4 col-md-3 pt-5 pt_4 border_right border_bottom w_sm_100 border_sm_none text_sm_center">
+                    <h4 class="pt-4 pb-2 text_medium text_fade fw_bold pb_3 text_center">Shape</h4>
+                  </div>
+                  <div class="col-4 col-md-5 border_right border_bottom w_sm_50">
+                    <h5 class="ps-2 text_secondary text_ultra-off under_line1 pt_4">Labo</h5>
+                    <ul class="pt-4 pb-2">
+                      <li class="text_regular text_fade">Power x time</li>
+                    </ul>
+                  </div>
+                  <div class="col-4 border_bottom w_sm_50">
+                    <h5 class="ps-2 text_secondary text_ultra-off under_line2 pt_4">Project based</h5>
+                    <ul class="pt-4 pb-2">
+                      <li class="text_regular text_fade">Product-based contract</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-4 col-md-3 border_right w_sm_100 border_sm_bottom border_sm_none">
+                    <h4 class="pt-4 text_medium text_fade fw_bold pb_3 text_center text_sm_center">Characteristic</h4>
+                  </div>
+                  <div class="col-4 col-md-5 border_right w_sm_50">
+                    <ul class="pt-4 pb-2">
+                      <li class="text_regular text_fade">Form a team in a week</li>
+                      <li class="text_regular text_fade">Accumulate development experience for long-term projects</li>
+                      <li class="text_regular text_fade">Easily change requirements</li>
+                    </ul>
+                  </div>
+                  <div class="col-4 w_sm_50">
+                    <ul class="pt-4 pb-2">
+                      <li class="text_regular text_fade">Ease of cost control</li>
+                      <li class="text_regular text_fade">Quick product confirmation</li>
+                      <li class="text_regular text_fade">Product quality assurance is handled by the development team</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-sm-4 mt-lg-0 d-flex justify-content-sm-center justify-content-xl-start service_btn pt-5 sm_center center mt_5" data-aos="zoom-out-up">
+                <button class="btn btn_primary">Contact us for a quotes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- services Ends -->
+    <!-- offshore Start -->
+    <section class="offshore pt-5">
+      <div class="container">
+        <div class="row pb-3 gx-lg-5 sm_center">
+          <div class="col-12 col-lg-6 pb-lg-4" data-aos="fade-right">
+            <h6 class="text-sm-center text-lg-start text_secondary text_white pt-3 text_sm_center"><span class="fw_bold">Star-blue offers offshore services</span>  in many development areas</h6>
+            <p class="text-sm-center text-lg-start text_regular text_white pt-4 pb-sm-3 pb-lg-5 text_sm_center">As an important partner of our customers, we support everything from design to development, operation, and maintenance
+            of various systems.</p>
+          </div>
+          <div class="col-12 col-lg-6 offshore_main pb-sm-5 pb-lg-0 pb_3">
+            <div class="row gx-lg-5 sm_center">
+              <div class="col-sm-6 mt-sm-5 mt-lg-0 position-absolute offshore_box1 mw_100 p_s" data-aos="slide-up">
+                <div class="offshore_box box1 py-5 mw_100">
+                  <p class="py-5 text-center fw_bold text_xl text_warning">System</p>
+                </div>
+                <div class="mt-4 offshore_box box2 py-5 mw_100">
+                  <p class="py-5 text-center fw_bold text_xl text_warning">Blockchain</p>
+                </div>
+              </div>
+              <div class="col-sm-6 mt-sm-5 mt-lg-0 position-absolute offshore_box2 mw_100 p_s" data-aos="slide-down">
+                <div class="offshore_box box3 py-5 mw_100">
+                  <p class="py-5 text-center fw_bold text_xl text_warning">Application</p>
+                </div>
+                <div class="mt-4 offshore_box box4 py-5 mw_100">
+                  <p class="py-5 text-center fw_bold text_xl text_warning">AI</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- offshore Ends -->
+    <!-- video Start -->
+    <section class="video pt-sm-3 pt-lg-5 pt_5">
+      <div class="container">
+        <!-- video_play -->
+        <div class="row">
+          <div class="col-12 col-xl-5 d-flex justify-content-center align-items-center">
+            <div class="video_content" data-aos="fade-right">
+              <h6 class="text-sm-center text-xl-start text_secondary text_sm_center"><span class="text_warning fw_bold">Star-blue</span> <span class="fw_bold">Video</span> Presentation</h6>
+              <p class="py-3 text-sm-center text-xl-start text_fade text_sm_center">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
+              mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+              <div class="d-flex justify-content-sm-center justify-content-xl-start video_btn sm_center">
+                <button class="btn btn_primary">Contact us for a quotes</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-xl-7">
+            <div class="video_play" data-aos="fade-left">
+              <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- bg_yellow -->
+      <div class="yellow">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+              <div class="pt-5 yellow_content">
+                <h1 class="text-center text_secondary text_white fw_bold" data-aos="zoom-out-up">Contact us for a quotes</h1>
+                <p class="pt-3 text-center text_white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                  officia consequat duis enim velit
+                  mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                <div class="pt-3 pb-5 d-flex justify-content-center" data-aos="zoom-out-down">
+                  <button class="btn btn_white">Get Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- contact -->
+      <div class="container">
+        <div class="contact_heading">
+          <h2 class="mt-lg-4 text-center pt-5 text_secondary fw_bold text_warning">Contact Process</h2>
+        </div>
+      </div>
+      <div class="contact_slider mt-sm-4 mt_6" data-aos="zoom-out-down">
+        <div class="row">
+          <div class="col-12">
+            <div class="owl-carousel owl-theme contact-carousel">
+              <div class="d-flex justify-content-center align-items-center border_r item">
+                <div class="contact_process">
+                  <h3 class="text_xl text-center text_fade fw_bold">Estimate inquiry</h3>
+                </div>
+              </div>
+              <div class="d-flex align-items-center justify-content-center border_r item">
+                <div class="contact_process d-flex">
+                  <div class="arrow_img">
+                    <img src="img/Union.svg" class="img-fluid" alt="arrow_image">
+                  </div>
+                  <h2 class="ps-3 text_xl text-center text_fade fw_bold">Both problems <br> Meeting</h2>
+                </div>
+              </div>
+              <div class="d-flex d-flex align-items-center justify-content-center border_r item">
+                <div class="contact_process d-flex">
+                  <div class="arrow_img">
+                    <img src="img/Union.svg" class="img-fluid" alt="arrow_image">
+                  </div>
+                  <h2 class="text-center text_xl text_fade fw_bold">Consulty <br> Estimate</h2>
+                </div>
+              </div>
+              <div class="d-flex d-flex align-items-center justify-content-center border_r item">
+                <div class="contact_process d-flex">
+                  <div class="arrow_img">
+                    <img src="img/Union.svg" class="img-fluid" alt="arrow_image">
+                  </div>
+                  <h2 class="ps-3 text_xl text-center text_fade fw_bold">Development <br> team Launch</h2>
+                </div>
+              </div>
+              <div class="d-flex align-items-center justify-content-center border_r item">
+                <div class="contact_process d-flex">
+                  <div class="arrow_img mt_above">
+                    <img src="img/Union.svg" class="img-fluid" alt="arrow_image">
+                  </div>
+                  <h2 class="text_xl text-center text_fade fw_bold">Signature</h2>
+                </div>
+              </div>
+              <div class="d-flex align-items-center justify-content-center border_r item">
+                <div class="contact_process d-flex">
+                  <div class="arrow_img">
+                    <img src="img/Union.svg" class="img-fluid" alt="arrow_image">
+                  </div>
+                  <h2 class="ps-3 text_xl text-center text_fade fw_bold">Development <br> -Operation</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- video Ends -->
+    <!-- bottom Start -->
+    <section class="bottom">
+      <div class="container">
+        <h2 class="text_secondary text-center fw_bold text_black">Document Download-Quotation Contact</h2>
+        <div class="row pt-sm-3 pt-lg-4 pt_4">
+          <div class="col-12 col-xl-6 pt-4" >
+            <div class="px-4 py-4 d-flex justify-content-between bottom_card1 flex_sm_column" data-aos="zoom-in-up">
+              <div class="ps-2">
+                <h3 class="text_sm_center text_secondary text_black fw_bold pt_4">Document</h3>
+                <p class="text_sm_center pt-3 text_medium text_fade">See company introduction / case study /</p>
+                <div class="pt-5 pb-4 sm_center">
+                  <button class="btn btn_secondary bg_warning">Download</button>
+                </div>
+              </div>
+              <div class="pe-2 bottom_img pt_4 pb_sm_4">
+                <img src="img/bottom1.svg" class="img-fluid pt_4" alt="icon">
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-xl-6 pt-4">
+            <div class="px-4 py-4 d-flex justify-content-between bottom_card2 bg_primary flex_sm_column" data-aos="zoom-in-down">
+              <div class="ps-2">
+                <h3 class="text_sm_center text_secondary text_white fw_bold pt_4">Quotation</h3>
+                <p class="text_sm_center pt-3 text_medium text_white">Contact information</p>
+                <div class="pt-5 pb-4 sm_center">
+                  <button class="btn btn_secondary bg-white text_yellow">Download</button>
+                </div>
+              </div>
+              <div class="pe-2 bottom_img pt_4 pb_sm_4">
+                <img src="img/bottom2.svg" class="img-fluid pt_4" alt="icon">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer Start -->
+    <footer class="pt-4 footer bg_footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="pb-5 footer_details">
+              <div class="row justify-content-between">
+                <!-- footer_logo -->
+                <div class="col-12 col-lg-5 col-xl-6">
+                  <div class="py-sm-4 py-lg-4 footer_content">
+                    <div
+                      class="d-flex justify-content-sm-center justify-content-lg-start pt-sm-3 pt-lg-0 sm_center pt_4 footer_logo ">
+                      <img class="img-fluid" src="img/footer_logo.svg" alt="logo_image">
+                    </div>
+                    <p
+                      class="text-sm-center text-lg-start pt-3 text_white text_regular text_sm_center pt_4">
+                      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
+                      mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-7 col-xl-6 pt-sm-4 pt-lg-0 pt_4">
+                  <div class="d-flex justify-content-between flex_sm_column pt_4">
+                    <!-- footer_service -->
+                    <div class="py-sm-3 py-lg-4 footer_services">
+                      <h2 class="pt-3 text-sm-center text-lg-start text_xm text_white fw_700 text_sm_center">
+                        Services</h2>
+                      <!-- footer_list -->
+                      <div class="d-flex justify-content-sm-center justify-content-lg-start sm_center footer_list">
+                        <ul class="list-unstyled pt-3">
+                          <li class="text-sm-center text-lg-start text_xs text_sm_center"><a class="text_white" href="#">Ui/Ux Design</a>
+                          </li>
+                          <li class="text-sm-center text-lg-start text_xs pt-sm-2 pt-lg-3 pt_4 text_sm_center"><a class="text_white" href="#">FrontEnd Deverlop</a>
+                          </li>
+                          <li class="text-sm-center text-lg-start text_xs pt-sm-2 pt-lg-3 pt_4 text_sm_center"><a class="text_white" href="#">Wordpress Building</a>
+                          </li>
+                          <li class="text-sm-center text-lg-start text_xs pt-sm-2 pt-lg-3 pt_4 text_sm_center"><a class="text_white" href="#">Auto bot</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- footer_contact -->
+                    <div class="py-sm-3 py-lg-4 pt_4 footer_info">
+                      <h2 class="pt-3 text-sm-center text-lg-start text_xm text_white fw_700 text_sm_center">
+                        Contact</h2>
+                      <!-- footer_list -->
+                      <div class="d-flex justify-content-sm-center justify-content-lg-start sm_center footer_list">
+                        <ul class="list-unstyled pt-3">
+                          <li class="text-sm-center text-lg-start text_xs text_sm_center">
+                            <img src="img/mail-coolcare.svg" alt="icon">
+                            <span><a class="text_white" href="#">99 88 99 66 99</a></span>
+                          </li>
+                          <li class="text-sm-center text-lg-start pt-sm-2 pt-lg-3 pt_4 text_xs text_sm_center">
+                            <img src="img/phone-coolcare.svg" alt="icon">
+                            <span>
+                              <a class="text_white" href="#">ui4free@gmail.com</a>
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- footer_info -->
+                    <div class="py-sm-3 pt-lg-4 pt_4 footer_info">
+                      <h2 class="pt-3 text-sm-center text-lg-start text_xm text_white fw_700 text_sm_center">
+                        Information</h2>
+                      <!-- footer_list -->
+                      <div class="d-flex justify-content-sm-center justify-content-lg-start sm_center footer_list">
+                        <ul class="list-unstyled pt-3">
+                          <li class="text-sm-center text-lg-start text_xs text_sm_center"><a class="text_white" href="#">Cookies</a>
+                          </li>
+                          <li class="text-sm-center text-lg-start pt-sm-2 pt-lg-3 pt_4 text_xs text_sm_center"><a class="text_white" href="#">Team</a></li>
+                          <li class="text-sm-center text-lg-start pt-sm-2 pt-lg-3 pt_4 text_xs text_sm_center"><a class="text_white" href="#">FAQ</a></li>
+                          <li class="text-sm-center text-lg-start pt-sm-2 pt-lg-3 pt_4 text_xs text_sm_center"><a class="text_white" href="#">Sale</a></li>
+                          <li class="text-sm-center text-lg-start pt-sm-2 pt-lg-3 pt_4 text_xs text_sm_center"><a class="text_white" href="#">Affilate</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- footer_bottom -->
+        <div class="footer_bottom bg_footer-bottom py-3">
+          <div class="container">
+            <div class="row flex_sm-reverse">
+              <div class="col-12 col-lg-7 pt_4 mw_100 pt-md-4 pt-lg-0">
+                <p class="text-center text_xs text_white pt_4">© ui4free.com 2022</p>
+              </div>
+              <div class="col-12 col-lg-5 d-flex justify-content-center mw_100">
+                <div class="px-sm-4 footer_img">
+                  <img src="img/linkedin.svg" alt="icon">
+                </div>
+                <div class="px-sm-4 px_4 footer_img">
+                  <img src="img/Facebook.svg" alt="icon">
+                </div>
+                <div class="px-sm-4 px_4 footer_img">
+                  <img src="img/Youtube.svg" alt="icon">
+                </div>
+                <div class="px-sm-4 px_4 footer_img">
+                  <img src="img/Instagram.svg" alt="icon">
+                </div>
+                <div class="px-sm-4 px_4 footer_img">
+                  <img src="img/Twitter.svg" alt="icon">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer Ends -->
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    <!-- Jquery -->
+    <script src="js/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+
+        $('.contact-carousel').owlCarousel({
+          loop: true,
+          nav: true,
+          mouseDrag: true,
+          dots: false,
+          responsive: {
+            0: {
+              items: 1
+            },
+            576: {
+              items: 2
+            },
+            992: {
+              items: 3
+            },
+            1441: {
+              items: 4
+            },
+            1600: {
+              items: 5
+            },
+            1800: {
+              items: 6
+            }
+
+          }
+
+        })
+
+        $('.slider-carousel').owlCarousel({
+          loop: true,
+          nav: true,
+          dots: false,
+          responsive: {
+            0: {
+              items: 1
+            },
+            576: {
+              items: 2
+            },
+            768: {
+              items: 3
+            },
+            992: {
+              items: 4
+            },
+            1600: {
+              items: 5
+            },
+            1800: {
+              items: 6
+            }
+
+          }
+
+        })
+
+        // toggle nav
+
+        var bars = $(".fa-bars");
+        var toggle = $("#toggle");
+        var close = $(".fa-close");
+
+        bars.click(function () {
+
+          bars.css("display", "none");
+          toggle.css("top", "0");
+          close.css("display", "block");
+
+        })
+
+        close.click(function () {
+
+          close.css("display", "none");
+          bars.css("display", "block");
+          toggle.css("top", "-150%");
+
+        })
+
+      })
+    </script>
+    <!-- wow js -->
+    <script src="js/wow.js"></script>
+
+    <!-- owl Carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- Animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          offset: 280, 
+           duration: 1000,
+      });
+    </script>
+    <!-- Custom scripts -->
+    <script type="text/javascript">
+      new WoW().init();
+    </script>
+
+  </body>
+</html>
